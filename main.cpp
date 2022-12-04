@@ -45,8 +45,8 @@ struct value{
                 _return_token(_close);
             }
         }
-        if(val == "sin") _return_token(_sin);
-        if(val == "cos") _return_token(_cos);
+        if(val == "sin" || val == "SIN") _return_token(_sin);
+        if(val == "cos" || val == "COS") _return_token(_cos);
         _return_token(_null);
     }
 
